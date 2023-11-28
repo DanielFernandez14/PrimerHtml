@@ -1,0 +1,27 @@
+.contenedor{
+    background-color: blue;
+    display:flex;
+    flex-direction: row; /*row pone horizontal*/
+    justify-content: space-between;
+       /*flex-direction: align-items: ;;alinea de forma vertical*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap; /*wrap para que cuando achiques la pagina
+    se muevan las imagenes y se acomoden*/
+    gap: 30px;/*permite un espacio entre las imagenes*/
+
+}
+
+#dos{background-color: rgb(214, 214, 14);
+    align-self:start; /* asignar un elemento hijo que 
+    se comporte distinto a el resto de los hnos. */;
+
+}
+.tarjeta{ width: 200px;
+            border: 2px solid violet;
+            background-color: blueviolet;
+}
+h1{ color: rgb(0, 0, 0); background-color: rgba(0, 136, 255, 0.911);width: fit-content;}
+ 

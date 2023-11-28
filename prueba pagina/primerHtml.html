@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Clase - 2</title>
+</head>
+<body>
+    <!-- Header se usa para la cabecera de la pagina-->
+    <header> <h1> Prueba de Blog </h1> 
+    </header>
+    <!-- section es para las secciones de la pagina-->
+    <!-- article se usa para contenido completamente independiente.
+    por ej. para historia de noticias, enmarcar publicaciones, una imagen, etc.
+    Identificar cada uno de los elementos de manera independiente-->
+    <section> <article><h2>Titulo de mi post</h2> 
+                        <p>Descripcion de mi post</p>
+                        <img src="img/img.png.jpeg"width="300" height="400"/> 
+                </article> 
+    </section>
+    <!-- footer es para el pie de pagina, podemos agregarle por ejemplo que nos 
+    envie de nuevo al comienzo, que nos redireccione a otra pagina, etc.-->
+    <footer> </footer>
+    <form> <label for="Nombre"> Nombre </label> <!-- para poner cuadros donde se puede escribir,
+    contraseñas, mail, nom y apellido, etc.-->
+         <input id="Nombre" name="nombre" placeholder="nombre"
+         type="text"/> 
+         <br> <!--El elemento HTML line break <br> produce un salto de línea en el texto (retorno de carro). 
+        Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.-->
+         <label label for="apellido"> Apellido </label>
+         <input id="apellido" name="apellido" placeholder="apellido" type="text"/>
+         <br>
+         <label for="comentario">Comentario</label>
+         <br> 
+         <textarea cols="30" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">
+             </textarea>
+             <br>
+        <button type="button">Tipo botón</button>  
+        <button type="reset">Reset</button> 
+        <button type="submit">Submit</button>  
+    </form>
+    <h1> Titulo principal </h1> <!--comentarios que vamos aplicando en nuestro codigo, por ejemplo el codigo.
+    no aparece en el navegador-->
+    <h2> Subtitulo </h2>
+    <p> probamos parrafo como comentario </p>
+    <h3> Heading nomas </h3>
+    <p> hola <span style="color:blue;">primer proyecto de html</span> 
+        <br> que acontece </p> <!-- etiqueta de span sirve para 
+        diferenciar o remarcar un pedacito del texto. seleccion (silenciosa)-->
+    <p> Parrafos de prueba </p> <!--Colocamos parrafos-->
+    <ul> <!--Lista no ordenada, aparecen con puntitos.-->
+        <li> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+    </ul>
+
+    <ol><li>Lista ordenada 1</li>
+        <li>Lista ordenada 1</li> 
+        <li>Lista ordenada 1</li>  
+     </ol> <!--Listas ordenadas-->
+
+    <h3> entramos a google </h3>
+    <br>
+    <a target="_blank" href="//www.google.com.ar">Ir a Google</a> <!-- abre un link que le pongamos
+    podemos usar <a target="_blank" antes del href para que abra en una nueva pestaña-->
+        <img src="img/img.png.jpeg" width="300" height="400"/> <!--img/ para poder poner la ruta de la carpeta
+        creada donde guardamos las imagenes. Una vez seleccionada se pone la ruta
+        de la imagen // width y height para cambiar alto y ancho de la imagen-->
+</body>
+</html>
