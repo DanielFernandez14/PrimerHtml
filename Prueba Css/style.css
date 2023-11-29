@@ -1,0 +1,196 @@
+#Titulo {
+    color: tomato;
+}               /* tiene que tener el ID en html para poder "enlazarlo" y tener el numeral adelante*/
+p.Texto{        /* para seleccionar una clase se agrega el punto . "texto" // se agrega "p.texto" para 
+                definir cual "texto" en especifico queremos usar*/
+    color: blueviolet;
+}
+
+p.especial { color: yellowgreen;}
+p.textoespecial {color: yellowgreen;}
+p.Cilantro { color: rgb(138, 71, 255);} 
+
+div p {         /*con la etiqueta div p seleccionamos (selector) todos los p que se encuentren en el div */
+    color: aquamarine;
+}
+div h2, div h3 {color: brown;} /*seleccionamos mas de una etiqueta*/
+*{font-size: 24px; /* el asterisco modifica todos los archivos que se encuentran dentro del html, aplican
+    si no fueron definidas por otros selectores, si no tiene definido nada si lo toma, por ejemplo el 
+    color black no se aplica porque ya tienen definido el color*/
+    /*color: black; si le saco el comentario se aplica el color black para todos los nuevos textos 
+    universalmente*/
+
+}
+/*.color{     valores hexagesimales #000 negro #fff blanco // #000000 
+    color: #ff0;*/ 
+
+/*.color{ rgb (255, 0, 0)}    valores de 0 a 255*/
+
+/*.color {
+    width: fit-content; /*width: fit-content para poner el recuadro solo en lo escrito*/
+    /*border es para poner un contorno al texto "propiedad color" dashed-dotted-solid-double-groove
+    ridge-inset-outset-none-hidden
+    border: 5px rgb(0, 0, 0) outset ;} */
+
+.color{
+
+    border-style: solid; /*el borde que queremos*/
+    border-color: blue; /*para el color*/
+    border-radius: 5px; /*se recomienda usar px y rem (16px por rem)*/
+    border-width: 15px;
+    width: fit-content;
+}
+#fondo { background-color: rgba(0,0,0,0.3); /*fondo atras del texto rgb + unicamente background*/
+         /*ejemplo: opacity:0.5 le da transparencia al recuadro entero y no solo al background*/
+        width: fit-content;
+        height: 200px;
+        background-image: url("uma.jpeg");
+        background-size: 100px 100px; /*tamaño que le damos a la imagen*/
+        /*background-repeat: repeat-y; para que se repita la imagen en forma horizontal (y) o vertical (x)*/
+        /*background-position-x: left; para ver donde queda posisionada la imagen de fondo, center, bottom, top
+        right, left*/
+    }
+.margen {background-color: chocolate; /*box model de html; cómo se pocisiona cada elemento dentro del
+    html, lo tienen todos los elementos pero se puede modificar con css*/
+        margin: 15px; /*arriba derecha abajo e izq=15px 20px 25px 30px; 
+        con uno solo se aplica a todos // es el margen que tiene el background*/
+        padding: 30px 15px 5px; /*espacios que estan dentro del elemento*/
+        border: solid 1px black; /*borde entre margin y padding*/
+        height: 100px; /*alto al elemento*/
+        width: 50px; /*ancho*/
+        overflow: scroll; /*overflow tiene por defecto visible; lo podemos poner en hidden;
+        scroll para poder movernos dentro del texto aplicado;*/
+        outline: 1px solid red; /*borde fuera del borde, afuera del margin*/
+}       
+.text {
+    font-family: "Nova square"; /*para poner una nueva font (google fonts, seleccionamos,
+    copiamos en el head de html link href *pegamos link completo*/ /*entre comillas*/
+    text-align: justify; /*center para centrar los textos//right y left (viene por defecto//justify 
+    deja un espacio entre las palabras*/
+    text-decoration: underline; /*underline, overline, line-trought... ir probrando*/
+    text-shadow: 3px 4px 5px; /*primero px a la derecha y luego para abajo, color, por detras del texto; 
+    difuminado 3er px*/
+}
+a:link{ 
+    color: blueviolet;
+}
+a:visited{ /*cuando ya lo visité*/
+    color:grey
+}
+a:hover{ /*cuando paso el mouse por encima*/
+    color: yellow;
+}
+a:active { /*cuando pincho el link*/
+    color: red;
+} /*se le pueden agregar todo lo aprendido*/
+ul{
+   /* width: fit-content; no ponerlo porque se superpone con padding; TIENE QUE IR ABAJO DEL TODO*/
+    background-color: cyan;
+    font-family: "Nova square";
+    margin: 10px;
+    padding: 10px;
+    border: 5px;
+    width: fit-content;
+            /*hasta aca aparecen los puntitos al costado de la lista, para sacarlos:*/
+    list-style-type: none;  /* none saca los puntos de la lista o modificar como aparecen esos elementos
+    dentro de nuestros listados*/
+}
+
+/*vamos a hacer una tabla*/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th,td{
+    border: solid 1px #eee;
+    padding: 5px;
+
+}
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+
+}
+
+/*DISPLAY, MAX-WIDTH y POSITION*/
+
+span{
+    display: block; /*block viene por defecto en la mayoria de los html--- para dejarlos en la misma linea 
+    se usa inline, para dejarlos horizontal se usa block (los fuerza para que vayan a una nueva linea ---
+    Los quevienen por defecto con inline son span, links y etiqueta de img*/
+    max-width: 300px;
+    background-color: red;
+
+}
+.inline {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+    border: 10px #aaa;
+    text-align: right;
+    background-color: chocolate;
+}
+
+#position {
+    position: sticky; /*static viene por defecto; relative relativa de donde deberia estar posicionado 
+    este elemento; fixed se mueve con todo el documento; absolute: se posiciona relativo con el 
+    elemento padre mas cercano y sino con el body; sticky es una mezcla, pero tiene que estar abajo de los span*/
+    left: 40px;
+    top: 25px;
+}
+
+/*FLOAT*/
+/*lo que hace es ponerlos a la izquierda o derecha quedan flotando y los podemos posicionarlos;
+toma los elementos con width y hight para posicionarlos*/
+
+/* adentro de html:
+    <div class="container"> 
+    <div class="left">izquierda hola soy daniel hola soy daniel</div>
+    <div class="right">derecha hola soy daniel hola soy daniel</div>
+    </div> */
+    
+   /*CSS:*/ 
+.left{
+    float: left;  
+    width: 200px;  
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 10px;
+}
+.right{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.container{
+    height: 200px;
+} 
+.card{
+    border: solid 10px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0px;
+    width: 33,3%;
+    background-color: aquamarine;
+}
+
+/*CENTRAR UN ELEMENTO*/
+
+.center{
+    padding: 50px 0px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto; /*lo centra en la pagina*/
+    background-color: aqua;
+}
