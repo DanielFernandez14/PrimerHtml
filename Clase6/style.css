@@ -1,0 +1,104 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-shadow: 4, 4, 4 darkblue;
+    text-align: center;
+    background-color: #8b0000;
+    border: black solid 2px;
+    right: 200px;
+    left: 200px;
+
+}
+section{
+    height: 600px;
+}
+.contenedor-padre{
+    background-color: lightblue;
+    width: 1600px;
+    height: 1600px;
+    position: relative;
+    }
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #8b0000;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+
+}
+.static{
+    position:static; /*valor por defecto de la position*/
+    margin-left: 80px;
+
+}
+.relative{
+    background-color: darkgreen;
+    position: relative; /*nos permite mover el elemento a un lugar especifico*/
+    left: 200px;
+    bottom: 100px;
+}
+.absolute{
+    background-color: gold;
+    position: absolute;
+    color: black;
+    top: 200px;
+    bottom: 20px;
+} /*absolute: nos permite mover el elemento (indicarle su posicion) saca el elemento
+de ese espacio de origen - toma de referencia inicial (0.0) al primer
+elemento padre con position:relative .
+si no consigue ningun elemento padre con position:relative, usa como (0,0) el body*/
+.fixed{
+    position: fixed;
+    background-color: pink;
+    color: black;
+    top: 43px;
+    right: 0px;
+    z-index: 0;
+} /*z-index para ponerlo arriba o debajo de otros elementos*/
+/*toma de refencia al body e indicamos una posicion para que quede fijo
+aunque scrolemos la pagina*/
+.sticky{
+    position: sticky;
+    background-color: deeppink;
+    left: 100px;
+    bottom: 400px;
+    top: 200px;
+    z-index: 0;
+} /*jugar siempre con las propiedades*/
+
+
+
+
+
+
+
+
+.div_boton{
+    width: fit-content;
+    background-color: gold;
+    border: 20px black;
+}
+
+
+
+
+
+
+
+
+
+.parrafo{
+    background-color: black;
+    color: white;
+
+}
+
+
+.footer{
+    background-color: #0000005c;
+    
+}
+/*es una mezcla entre el relative y fixed*/
