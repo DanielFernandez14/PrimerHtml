@@ -24,4 +24,16 @@
             background-color: blueviolet;
 }
 h1{ color: rgb(0, 0, 0); background-color: rgba(0, 136, 255, 0.911);width: fit-content;}
- 
+
+/*Justify-content (start-end-center-between-around): modifica elementos horizontalmente ///  
+cuando es una columna, justify-content cambia a vertical y align-items a horizontal. /// 
+Align-items (start-end-center-baseline-stretch): Esta propiedad CSS alinea elementos verticalmente 
+y acepta los siguientes valores // Flex-direction (row-reverse-column-reverse). Esta propiedad CSS 
+define la dirección de los elementos en el contenedor (donde se encuentran)  // Order a elementos 
+individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad
+ para establecerlo a un número entero positivo o negativo. (hay que definirle que elemento se debe modificar) 
+ // Align-self: Otra propiedad que puedes aplicar a elementos individuales es align-self. // 
+ Align-content Esta propiedad acepta los mismos valores de align-items y sus valores son usados 
+ para un elemento específico (se debe determinar que elemento se va a modificar) align-content 
+ determina el espacio entre las líneas, mientras que align-items determina como los elementos en su 
+ conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.*/

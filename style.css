@@ -1,0 +1,75 @@
+/*body{
+    background-color: rgb(56, 56, 56);
+}
+
+.creativebrain{
+    background-color: grey;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid black;
+    color: rgb(11, 8, 59);
+    text-align: center; text-shadow: 2px 2px 2px;
+    font-size: 50px;
+}
+
+p{
+    margin: 20px;
+    padding: 20px;
+    border: 3px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin: 90px;
+}
+.primera{
+    background-color: rgb(128, 128, 128);
+    text-decoration-line: underline;
+    text-align: center;
+    text-transform: capitalize;
+    border: solid 3px;
+    font-size: 20px;
+    
+}
+.segundop{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: solid black;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px;
+    text-size-adjust: 20px;
+}
+
+.contenedor{
+    background-color: rgb(128, 128, 128);
+    display:flex;
+    align-items: row; /*row pone horizontal//flex-direction: align-items: ;;alinea de forma vertical*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap; /*wrap para que cuando achiques la pagina
+        se muevan las imagenes y se acomoden*/
+    gap: 50px;/*permite un espacio entre las imagenes*/
+
+}
+
+.tarjeta{
+     background-color: rgb(128, 128, 128);
+     border: solid rgb(1, 1, 32);
+}
+
+.buttoncomienzo{
+    background-color: black;
+    color: aliceblue;
+    border: solid 3px darkgray;
+}
+
+
+#tarjetas{
+    color: black;
+    text-align: center;
+    text-shadow: 3px 3px 3px;
+    
+} */
